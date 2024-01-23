@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 100vh;
+}
+
 :root{
     --zoom-light: rgb(82, 78, 78);
     --zoom-dark: black;
@@ -14,16 +18,49 @@
 
 .debug #site_header{
     height: 100px;
-    background-color: var(--zoom-light);
-
 }
 
 .debug #site_main{
     height: 800px;
-    background-color: black;
 }
 
 .debug #site_footer{
     height: 100px;
+}
+
+#site_header{
+    background-color: var(--zoom-dark);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#site_main{
+    background-color: var(--zoom-dark);
+}
+
+#site_footer{
     background-color: var(--zoom-light);
+}
+
+.button{
+    background-color: var(--zoom-light);
+    color: var(--zoom-lighter);
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+}
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+}
+
+.photo{
+    position: relative;
+}
+
+.nome{
+    position: absolute;
+    z-index: 1;
 }
