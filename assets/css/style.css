@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    height: 100vh;
-}
-
 :root {
     --zoom-light: rgb(82, 78, 78);
     --zoom-dark: black;
@@ -28,19 +24,29 @@ body {
     height: 100px;
 }
 
+body{
+    width: 100vw;
+}
+
 #site_header {
     background-color: var(--zoom-dark);
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 100%;
+    margin-bottom: -0.25rem;
 }
 
 #site_main {
     background-color: var(--zoom-dark);
+    height: 90vh;
+    width: 100%;
 }
 
 #site_footer {
     background-color: var(--zoom-light);
+    height: 10vh;
+    width: 100%;
 }
 
 .button {
@@ -51,16 +57,18 @@ body {
 }
 
 .container {
-    width: 80%;
-    max-width: 1200px;
+    padding: 2rem 2rem;
     display: flex;
 }
 
 .row {
-    width: calc(100/7);
+    /* width: calc(100/7); */
     max-width: 100%;
 }
 
+.column{
+    width: calc(100/7);
+}
 .photo {
     position: relative;
     padding: 0.25rem;
@@ -70,9 +78,10 @@ body {
     position: absolute;
     z-index: 1;
     color: var(--zoom-lighter);
-    background-color: var(--zoom-light);
+    background-color: rgba(128, 128, 128, 0.644);
     bottom: 5%;
     left: 2%;
+    padding: 0.25rem;
 }
 
 .column {
