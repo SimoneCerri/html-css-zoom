@@ -68,8 +68,10 @@ img {
 /* #region Main */
 #site_main {
     background-color: var(--zoom-dark);
-    /* height: calc(100vh - 30px - 70px); */
-    /* width: 100vw; */
+    height: calc(100vh - 40px - 70px);
+    width: 100%;
+    overflow: scroll;
+    /* height: 100vh; */
 }
 
 .container {
@@ -88,7 +90,7 @@ img {
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    flex-wrap: nowrap;
+    flex-wrap:wrap;
 }
 
 .column {
