@@ -28,24 +28,29 @@ body{
     width: 100vw;
 }
 
+img{
+    width: 100%;
+}
+
 #site_header {
     background-color: var(--zoom-dark);
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 0 1rem;
     width: 100%;
-    margin-bottom: -0.25rem;
+    height: 40px;
 }
 
 #site_main {
     background-color: var(--zoom-dark);
-    height: 90vh;
-    width: 100%;
+    height: calc(100vh - 30px - 70px);
+    /* width: 100%; */
 }
 
 #site_footer {
     background-color: var(--zoom-light);
-    height: 10vh;
+    height: 70px;
     width: 100%;
 }
 
@@ -62,12 +67,12 @@ body{
 }
 
 .row {
-    /* width: calc(100/7); */
+    width: calc(100/7);
     max-width: 100%;
 }
 
 .column{
-    width: calc(100/7);
+    width: calc(100/5);
 }
 .photo {
     position: relative;
@@ -85,9 +90,7 @@ body{
 }
 
 .column {
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
+    width: calc(100/7);
 }
 
 .info{
