@@ -92,10 +92,11 @@ img {
     /* align-items: center; */
     flex-wrap:wrap;
 }
-
-.column {
-    /* width: calc(100/5); */
-}
+ 
+/* .column {
+    width: calc(100/5);
+    display: flex;;
+} */
 
 .photo {
     position: relative;
