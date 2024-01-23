@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --zoom-light: rgb(82, 78, 78);
+    --zoom-dark: black;
+    --zoom-lighter: white;
+    --zoom-positive:green;
+    --zoom-negative:red;
+}
+
+.debug #site_header{
+    height: 100px;
+    background-color: var(--zoom-light);
+
+}
+
+.debug #site_main{
+    height: 800px;
+    background-color: black;
+}
+
+.debug #site_footer{
+    height: 100px;
+    background-color: var(--zoom-light);
+}
