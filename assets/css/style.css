@@ -85,7 +85,35 @@ body {
     color: var(--zoom-lighter);
 }
 
+.container_footer{
+    display: flex;
+    justify-content: space-between;
+}
+
 .end{
     color: var(--zoom-negative);
     background-color: grey;
+    height: 100%;
+}
+
+.left{
+    flex-grow: 1;
+    display: flex;
+    text-align: center;
+}
+
+.center{
+    flex-grow: 3;
+    display: flex;
+    text-align: center;
+}
+
+.center>div{
+    padding: 0.5rem;
+}
+
+.right{
+    flex-grow: 1;
+    align-self: center;
+    text-align: center;
 }
